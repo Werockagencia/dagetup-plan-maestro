@@ -137,6 +137,8 @@ td b{font-weight:600}
 .do-dont .card:first-child{border-top:3px solid var(--acido)}
 .do-dont .card:last-child{border-top:3px solid #ff5a4e}
 .mail{font:14px/1.7 "JetBrains Mono",monospace;background:var(--carbon);border:1px solid var(--linea);padding:24px;white-space:pre-wrap;color:#d8d1c5}
+.duotono{background:#d4ff00;overflow:hidden}
+.duotono img{filter:grayscale(1) brightness(1.9) contrast(1.45);mix-blend-mode:multiply;display:block}
 .ig-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:3px;max-width:460px}
 .ig-grid .t{aspect-ratio:4/5;background:var(--carbon);border:1px solid var(--linea);padding:12px;display:flex;flex-direction:column;justify-content:space-between}
 .ig-grid .t span{font:500 11px "JetBrains Mono",monospace;color:var(--muted)}
@@ -394,6 +396,19 @@ footer img{width:160px;margin:0 auto 18px;opacity:.7}
     <div class="card"><h4>Escenario</h4><p>Plano abierto con público y visuales: muestra la escala del show. Para EPK, flyers y prensa.</p></div>
     <div class="card"><h4>Interpretación</h4><p>Plano medio cantando o tocando: la voz y las manos. Para portadas, perfil y avatar.</p></div>
     <div class="card"><h4>Luz de escenario</h4><p>Fondos oscuros con la luz real del show (azul, verde, ámbar). Se respeta el color, sin filtros saturados.</p></div>
+  </div>
+  <div class="split" style="margin-top:40px;align-items:center">
+    <div class="duotono"><img src="assets/fest-verde.jpg" alt="Foto en vivo con tratamiento duotono ácido" style="width:100%;aspect-ratio:4/3;object-fit:cover;object-position:28% 40%"></div>
+    <div>
+      <h3>Duotono ácido</h3>
+      <p>El sello gráfico de la marca: la foto pasa a blanco y negro con contraste alto y se imprime sobre verde ácido. Es la estética que ya funcionó en Medellín Takeover y en tus posts, y vuelve cualquier foto reconocible como Da Get Up.</p>
+      <ul style="margin:14px 0 0 18px;color:#cfc8bc">
+        <li><b>Duotono:</b> retratos, bio, portadas de reels y carruseles, flyers, piezas tipográficas.</li>
+        <li><b>Color real:</b> galería de shows y hero, donde la luz del escenario cuenta la historia.</li>
+        <li>Funciona con fotos bien iluminadas. Las fotos muy oscuras se ven negras: se aclaran antes.</li>
+        <li>En web: <code>grayscale(1) brightness(1.9) contrast(1.45)</code> en modo <i>multiply</i> sobre #D4FF00.</li>
+      </ul>
+    </div>
   </div>
   <div class="card" style="margin-top:18px"><h4>Dejar atrás</h4><p>Los retratos viejos con gafas, los fondos psicodélicos de ojo morado/neón y los filtros saturados del EPK actual. Pertenecen a otra etapa. En vivo los visuales pueden ser libres, pero el material oficial sigue esta guía.</p></div>
 </div></section>
