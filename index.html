@@ -1,0 +1,570 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Da Get Up · Plan Maestro</title>
+<meta name="description" content="Propósito, marca, identidad visual y plan de carrera de Da Get Up y el álbum El Andar.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --noche:#0b0b0c; --carbon:#151517; --linea:#2a2a2d;
+  --hueso:#ede6da; --ceniza:#8a857d;
+  --acido:#d4ff00;
+  --amanecer:#f28c38; --girasol:#e9b949; --tierra:#8a4a32; --rio:#2e6e73;
+  --bg:var(--noche); --fg:var(--hueso); --muted:var(--ceniza);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--fg);font:16px/1.65 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:var(--acido)}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+h1,h2,h3,.cond{font-family:Archivo,sans-serif;font-stretch:62%;font-weight:800;text-transform:uppercase;letter-spacing:.01em;line-height:.95}
+h2{font-size:clamp(44px,7vw,88px);margin-bottom:28px}
+h3{font-size:clamp(24px,3vw,32px);margin-bottom:10px}
+.kicker{font:500 12px/1 "JetBrains Mono",monospace;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:18px;display:flex;gap:12px;align-items:center}
+.kicker b{color:var(--acido);font-weight:500}
+p{max-width:68ch}
+p+p{margin-top:14px}
+.lead{font-size:clamp(18px,2vw,22px);line-height:1.5;color:var(--fg)}
+.muted{color:var(--muted)}
+section{padding:110px 0;border-top:1px solid var(--linea)}
+/* nav */
+nav{position:sticky;top:0;z-index:20;background:rgba(11,11,12,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--linea)}
+nav .wrap{display:flex;align-items:center;gap:22px;height:56px;overflow-x:auto;scrollbar-width:none}
+nav .wrap::-webkit-scrollbar{display:none}
+nav img{height:22px;flex:none}
+nav a{font:500 12px/1 "JetBrains Mono",monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);text-decoration:none;white-space:nowrap}
+nav a:hover{color:var(--fg)}
+/* hero */
+.hero{position:relative;min-height:92vh;display:flex;align-items:flex-end;overflow:hidden;border:0}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:65% 35%}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(270deg,transparent 35%,rgba(11,11,12,.92) 72%),linear-gradient(0deg,var(--noche) 0%,transparent 40%)}
+.hero .wrap{position:relative;z-index:2;width:100%;padding-bottom:80px;display:flex;justify-content:flex-start}
+.band{position:relative;height:70vh;min-height:380px;overflow:hidden}
+.band img{width:100%;height:100%;object-fit:cover}
+.band figcaption{position:absolute;left:24px;bottom:20px;font:12px "JetBrains Mono",monospace;letter-spacing:.1em;text-transform:uppercase;color:var(--hueso);opacity:.8}
+.gallery{display:grid;grid-template-columns:2fr 1fr;grid-auto-rows:260px;gap:12px;margin-top:18px}
+.gallery img{width:100%;height:100%;object-fit:cover}
+.gallery .tall{grid-row:span 2}
+@media(max-width:700px){.gallery{grid-template-columns:1fr;grid-auto-rows:240px}.gallery .tall{grid-row:span 1}}
+.hero-txt{max-width:520px}
+.hero-logo{width:150px;margin-bottom:28px}
+.hero h1{font-size:clamp(64px,11vw,140px);margin-bottom:22px}
+.hero h1 span{color:var(--acido)}
+.hero .lead{color:var(--hueso)}
+.sun{display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--amanecer)}
+/* grids & cards */
+.grid{display:grid;gap:18px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.g3{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.g4{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.card{background:var(--carbon);border:1px solid var(--linea);padding:26px}
+.card h4{font:600 15px/1.3 Inter;margin-bottom:8px}
+.card p,.card li{font-size:15px;color:#cfc8bc}
+.card ul{padding-left:18px}
+.card li+li{margin-top:6px}
+.tag{display:inline-block;font:500 11px/1 "JetBrains Mono",monospace;letter-spacing:.1em;text-transform:uppercase;padding:6px 8px;border:1px solid var(--linea);color:var(--muted);margin-bottom:14px}
+.tag.on{border-color:var(--acido);color:var(--acido)}
+.tag.warm{border-color:var(--amanecer);color:var(--amanecer)}
+.big-quote{font-family:Archivo,sans-serif;font-stretch:62%;font-weight:700;text-transform:uppercase;font-size:clamp(40px,6.5vw,84px);line-height:.98;max-width:16ch}
+.big-quote em{font-style:normal;color:var(--amanecer)}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+@media(max-width:820px){.split{grid-template-columns:1fr}}
+.photo{aspect-ratio:4/5;object-fit:cover;width:100%;filter:grayscale(1) contrast(1.1)}
+.photo.warm{filter:none}
+/* list rows */
+.rows>div{display:grid;grid-template-columns:200px 1fr;gap:24px;padding:22px 0;border-bottom:1px solid var(--linea)}
+.rows>div:first-child{border-top:1px solid var(--linea)}
+.rows dt,.rows .k{font-family:Archivo,sans-serif;font-stretch:62%;font-weight:800;text-transform:uppercase;font-size:24px;line-height:1}
+@media(max-width:640px){.rows>div{grid-template-columns:1fr;gap:6px}}
+/* architecture */
+.arch{display:grid;gap:14px}
+.arch .top{background:var(--hueso);color:var(--noche);padding:28px;text-align:center}
+.arch .top h3{margin:0}
+.arch .kids{display:grid;grid-template-columns:1.4fr 1fr;gap:14px}
+@media(max-width:700px){.arch .kids{grid-template-columns:1fr}}
+.arch .core{border:2px solid var(--amanecer)}
+.arch .dj{border:2px solid var(--acido)}
+.meter{height:6px;background:var(--linea);margin:14px 0 6px}
+.meter i{display:block;height:100%}
+/* palette */
+.swatches{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px}
+.sw{border:1px solid var(--linea)}
+.sw .c{height:120px}
+.sw .t{padding:12px;font:12px/1.5 "JetBrains Mono",monospace;background:var(--carbon)}
+.sw .t b{display:block;font:600 13px Inter;margin-bottom:2px;color:var(--fg)}
+.ratio{display:flex;height:44px;margin:26px 0 8px}
+.ratio div{display:flex;align-items:center;padding-left:12px;font:12px "JetBrains Mono",monospace;color:var(--noche)}
+/* type */
+.type-sample{padding:28px;border:1px solid var(--linea);background:var(--carbon)}
+.type-sample .a{font-family:Archivo;font-stretch:62%;font-weight:800;font-size:72px;line-height:.9;text-transform:uppercase}
+.type-sample .b{font-family:Inter;font-size:18px;margin-top:10px}
+.type-sample .c{font-family:"JetBrains Mono";font-size:13px;color:var(--muted);margin-top:10px}
+/* tracklist */
+.track{display:grid;grid-template-columns:60px 1fr auto;gap:18px;padding:18px 0;border-bottom:1px solid var(--linea);align-items:baseline}
+.track .n{font-family:Archivo;font-stretch:62%;font-weight:800;font-size:34px;color:var(--muted)}
+.track h4{font-family:Archivo;font-stretch:62%;font-weight:800;font-size:28px;text-transform:uppercase;line-height:1}
+.track p{font-size:14px;color:var(--muted);margin-top:4px}
+.track .st{font:11px "JetBrains Mono",monospace;text-transform:uppercase;letter-spacing:.08em;white-space:nowrap}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px;vertical-align:middle}
+.journey{display:flex;height:14px;margin:30px 0 10px}
+.journey i{flex:1}
+/* timeline */
+.tl{display:grid;gap:0}
+.tl>div{display:grid;grid-template-columns:180px 1fr;gap:28px;padding:28px 0;border-top:1px solid var(--linea)}
+.tl .when{font-family:Archivo;font-stretch:62%;font-weight:800;font-size:30px;text-transform:uppercase;line-height:1}
+.tl .when small{display:block;font:12px "JetBrains Mono";color:var(--muted);margin-top:6px;letter-spacing:.06em}
+.tl ul{padding-left:18px}
+.tl li+li{margin-top:6px}
+@media(max-width:640px){.tl>div{grid-template-columns:1fr;gap:10px}}
+/* table */
+table{width:100%;border-collapse:collapse;font-size:15px}
+th,td{text-align:left;padding:14px 12px;border-bottom:1px solid var(--linea);vertical-align:top}
+th{font:500 11px "JetBrains Mono";letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+td b{font-weight:600}
+.tbl{overflow-x:auto}
+/* checklist */
+.check label{display:flex;gap:14px;padding:14px 0;border-bottom:1px solid var(--linea);cursor:pointer;align-items:flex-start}
+.check input{appearance:none;width:20px;height:20px;border:1.5px solid var(--ceniza);flex:none;margin-top:3px;cursor:pointer}
+.check input:checked{background:var(--acido);border-color:var(--acido)}
+.check input:checked+span{color:var(--muted);text-decoration:line-through}
+.do-dont{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media(max-width:640px){.do-dont{grid-template-columns:1fr}}
+.do-dont .card:first-child{border-top:3px solid var(--acido)}
+.do-dont .card:last-child{border-top:3px solid #ff5a4e}
+.mail{font:14px/1.7 "JetBrains Mono",monospace;background:var(--carbon);border:1px solid var(--linea);padding:24px;white-space:pre-wrap;color:#d8d1c5}
+footer{padding:80px 0;border-top:1px solid var(--linea);text-align:center;color:var(--muted);font-size:14px}
+footer img{width:90px;margin:0 auto 18px;opacity:.7}
+</style>
+</head>
+<body>
+
+<nav><div class="wrap">
+  <img src="assets/logo-blanco.png" alt="Da Get Up">
+  <a href="#diagnostico">Diagnóstico</a>
+  <a href="#esencia">Esencia</a>
+  <a href="#posicion">Posicionamiento</a>
+  <a href="#arquitectura">Arquitectura</a>
+  <a href="#voz">Voz</a>
+  <a href="#visual">Identidad</a>
+  <a href="#andar">El Andar</a>
+  <a href="#plan">Plan 12 meses</a>
+  <a href="#sellos">Sellos</a>
+  <a href="#practicas">Prácticas</a>
+  <a href="#ahora">Esta semana</a>
+</div></nav>
+
+<header class="hero">
+  <img src="assets/live-voz.jpg" alt="Da Get Up cantando en vivo frente al APC40 y el teclado">
+  <div class="wrap"><div class="hero-txt">
+    <img class="hero-logo" src="assets/logo-blanco.png" alt="">
+    <div class="kicker"><b>Plan maestro</b> · v1 · noviembre 2026</div>
+    <h1>La música<br><span>primero.</span></h1>
+    <p class="lead">Propósito, marca, identidad visual y plan de carrera de Da Get Up. Un solo documento para que todo el ecosistema —música, shows, redes, EPK, sellos— hable el mismo idioma.</p>
+  </div></div>
+</header>
+
+<!-- DIAGNOSTICO -->
+<section id="diagnostico"><div class="wrap">
+  <div class="kicker"><b>01</b> Diagnóstico de manager</div>
+  <h2>Dónde estás hoy</h2>
+  <p class="lead">Tienes más construido de lo que parece. El problema no es el talento ni el material: es que la historia que cuentas hoy ya no es la música que estás haciendo.</p>
+  <div class="grid g2" style="margin-top:40px">
+    <div class="card">
+      <span class="tag on">Fortalezas</span>
+      <ul>
+        <li><b>Live act real</b>: Ableton, sintes analógicos, guitarra, bajo y ahora <b>voz y letras propias</b>. Eso te separa de la mayoría de DJs.</li>
+        <li><b>Un álbum con concepto</b> (El Andar): 12 capítulos, narrativa clara, ya ensayado más de 20 veces como live.</li>
+        <li><b>Trayectoria verificable</b>: gira Europa 2022 (Irlanda, Bélgica, Francia, España), cierre del Mundial de Ultimate Masters, La Kasa x la Ventana 2025.</li>
+        <li><b>Release con sello</b>: <i>Skyfall</i> con Mikro Teck Records (Hollywood, FL).</li>
+        <li><b>Un manifiesto escrito</b> que ya dice quién eres. Pocos artistas lo tienen.</li>
+        <li>Rider técnico listo, archivo grande de fotos, visuales y videos, y el respaldo de We Rock.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <span class="tag warm">Brechas</span>
+      <ul>
+        <li>El EPK dice <b>"Electronic World Music"</b> y vende cumbia, folclor y sonidos ancestrales. El Andar suena a <b>indie electrónico / house con voz</b>. Hay que actualizar el relato.</li>
+        <li>Dos logotipos conviviendo (letra condensada vs. tipografía de puntos) y una estética psicodélica (ojo morado/neón) que no conversa con la nueva música.</li>
+        <li>El público estaba concentrado en una sola cuenta de Instagram, que se perdió. No había una base propia (WhatsApp, correo).</li>
+        <li>Versatilidad de DJ sin orden: cumbia, salsa, techno, house… sin una regla de qué se comunica primero.</li>
+        <li>Booking con el correo de la agencia. Falta un canal de contacto propio del artista.</li>
+        <li>Muchos proyectos abiertos (Dos Doses, covers, remixes, Hip Hop…) compitiendo con el foco principal.</li>
+      </ul>
+    </div>
+  </div>
+</div></section>
+
+<!-- ESENCIA -->
+<section id="esencia"><div class="wrap">
+  <div class="kicker"><b>02</b> Esencia</div>
+  <div class="split">
+    <div>
+      <h2>Por qué existe Da Get Up</h2>
+      <p class="big-quote" style="margin-bottom:30px">Recordar que todavía podemos <em>sentir profundamente.</em></p>
+      <p class="muted">Tomado de tu manifiesto. Es el propósito: no cambia con cada lanzamiento, es el filtro para decidir qué hacer y qué no.</p>
+    </div>
+    <img class="photo warm" src="assets/live-teclado.jpg" alt="Da Get Up tocando teclado en vivo">
+  </div>
+  <dl class="rows" style="margin-top:60px">
+    <div><dt>Visión</dt><dd>Ser una de las voces de referencia de la electrónica en español: un live act que se reconoce en Colombia y circula en festivales de Latinoamérica y Europa, con música que la gente siente como propia.</dd></div>
+    <div><dt>Misión</dt><dd>Convertir experiencias reales en canciones y en momentos en vivo, uniendo lo humano y lo electrónico, para crear conexiones auténticas entre las personas y el sonido.</dd></div>
+    <div><dt>Esencia</dt><dd>Lo humano dentro de lo electrónico. Lo orgánico dentro de lo futurista. La voz que humaniza la máquina.</dd></div>
+  </dl>
+  <h3 style="margin-top:60px">Valores</h3>
+  <div class="grid g4" style="margin-top:20px">
+    <div class="card"><h4>Verdad</h4><p>No interpreto un personaje. Todo nace de algo vivido.</p></div>
+    <div class="card"><h4>Humanidad</h4><p>La voz, la imperfección y la emoción por encima de la técnica.</p></div>
+    <div class="card"><h4>Camino</h4><p>El proceso es la obra. Constancia antes que velocidad.</p></div>
+    <div class="card"><h4>Conexión</h4><p>Momentos reales, no solo escenarios grandes.</p></div>
+    <div class="card"><h4>Humildad</h4><p>Escuchar, aprender, agradecer. El talento se trabaja.</p></div>
+  </div>
+</div></section>
+
+<!-- POSICIONAMIENTO -->
+<section id="posicion"><div class="wrap">
+  <div class="kicker"><b>03</b> Posicionamiento</div>
+  <h2>Cómo te van a recordar</h2>
+  <div class="grid g2">
+    <div class="card">
+      <span class="tag on">Categoría</span>
+      <h3>Electrónica con voz en español</h3>
+      <p>Indie electrónico y house melódico, con letras propias y un live act tocado de verdad. Las raíces latinas aparecen como textura (percusiones, alguna cumbia), no como la etiqueta principal.</p>
+    </div>
+    <div class="card">
+      <span class="tag warm">Frase de posicionamiento</span>
+      <p class="lead">Para quienes buscan en la pista algo más que ritmo, Da Get Up es el live act colombiano que <b>pone voz y alma a la electrónica</b>: canciones que se bailan y se sienten.</p>
+    </div>
+  </div>
+  <h3 style="margin-top:56px">Descriptor (reemplaza "Electronic World Music")</h3>
+  <div class="grid g3" style="margin-top:16px">
+    <div class="card"><span class="tag on">Recomendado</span><h4>Electrónica con alma</h4><p>Corto, en español, dice exactamente la diferencia. Funciona en bio, flyers y prensa.</p></div>
+    <div class="card"><span class="tag">Opción</span><h4>Indie Electronic · Live Act</h4><p>Más claro para sellos y bookers internacionales.</p></div>
+    <div class="card"><span class="tag">Opción</span><h4>Human Electronic Music</h4><p>Toma "lo humano y lo electrónico" del manifiesto. Bilingüe.</p></div>
+  </div>
+  <h3 style="margin-top:56px">Bio nueva (borrador)</h3>
+  <div class="grid g2" style="margin-top:16px">
+    <div class="card"><span class="tag">Corta · redes</span><p>Da Get Up · Electrónica con alma. Live act con voz, sintes y letras propias desde Colombia. Nuevo álbum: <i>El Andar</i>.</p></div>
+    <div class="card"><span class="tag">Media · EPK y prensa</span><p>David Higuera, aka Da Get Up, es un productor, cantante y live performer colombiano que une lo humano y lo electrónico. Su sonido —indie electrónico y house melódico con letras en español— nace de experiencias reales y se interpreta en vivo con Ableton, sintetizadores analógicos, guitarra y voz. Tras una gira por Europa en 2022 y su lanzamiento <i>Skyfall</i> con Mikro Teck Records, prepara <i>El Andar</i>: un álbum y live act sobre el viaje de volver a uno mismo.</p></div>
+  </div>
+  <h3 style="margin-top:56px">Referentes de sonido y de carrera</h3>
+  <p class="muted" style="margin-bottom:16px">Para orientar decisiones y pitches ("si te gusta X, esto te va a gustar"). Son brújula, no algo para copiar.</p>
+  <div class="grid g4">
+    <div class="card"><h4>Jan Blomqvist</h4><p>Live act electrónico con voz propia. El modelo más cercano a El Andar.</p></div>
+    <div class="card"><h4>Rüfüs Du Sol · Bob Moses</h4><p>Canción + club. Shows que funcionan como concierto.</p></div>
+    <div class="card"><h4>Ela Minus</h4><p>Colombiana, electrónica hecha a mano, carrera internacional.</p></div>
+    <div class="card"><h4>Nicola Cruz · Bonobo</h4><p>Electrónica con raíz orgánica tratada con elegancia.</p></div>
+  </div>
+</div></section>
+
+<!-- ARQUITECTURA -->
+<section id="arquitectura"><div class="wrap">
+  <div class="kicker"><b>04</b> Arquitectura de marca</div>
+  <h2>Una marca, dos formatos</h2>
+  <p class="lead" style="margin-bottom:36px">La versatilidad no se esconde: se ordena. Todo lo público empieza por El Andar. El DJ set es la puerta de entrada y lo que paga las cuentas mientras el live crece.</p>
+  <div class="arch">
+    <div class="top"><div class="kicker" style="color:#555;justify-content:center">Marca madre</div><h3>Da Get Up</h3><p style="margin:8px auto 0;color:#333">El artista, su propósito y su voz</p></div>
+    <div class="kids">
+      <div class="card core">
+        <span class="tag warm">Núcleo · 70% de la comunicación</span>
+        <h3>El Andar · Live Act</h3>
+        <p>Indie electrónico y house con voz. Canciones propias, sintes, guitarra. Para festivales, conciertos, showcases, salas y prensa.</p>
+        <div class="meter"><i style="width:70%;background:var(--amanecer)"></i></div>
+        <p class="muted" style="font-size:13px">Formato de 45–60 min · rider técnico propio · precio de concierto</p>
+      </div>
+      <div class="card dj">
+        <span class="tag on">Pista · 30%</span>
+        <h3>Da Get Up · DJ Set</h3>
+        <p>House, indie dance y melodic, con guiños latinos (cumbia, salsa, folclor) como sabor, no como etiqueta. Para clubes, fiestas privadas y marcas.</p>
+        <div class="meter"><i style="width:30%;background:var(--acido)"></i></div>
+        <p class="muted" style="font-size:13px">Formato de 1–3 h · se adapta a la fiesta · puerta de entrada a nuevos públicos</p>
+      </div>
+    </div>
+  </div>
+  <div class="card" style="margin-top:14px">
+    <h4>Regla de oro</h4>
+    <p>Puedes tocar salsa en un set de matrimonio, pero <b>no se comunica</b>. En redes, EPK y prensa solo aparece lo que construye a Da Get Up como artista de El Andar. Proyectos paralelos (Dos Doses, covers, Hip Hop) quedan en pausa o salen bajo otro nombre.</p>
+  </div>
+</div></section>
+
+<!-- PUBLICO Y VOZ -->
+<section id="voz"><div class="wrap">
+  <div class="kicker"><b>05</b> Público y voz</div>
+  <h2>A quién le hablas y cómo</h2>
+  <div class="grid g3">
+    <div class="card"><span class="tag">Persona 1</span><h4>La que escucha</h4><p>25–38 años, Bogotá, Medellín, Sabana. Escucha indie y electrónica, va a conciertos más que a discotecas. Busca música que le diga algo.</p></div>
+    <div class="card"><span class="tag">Persona 2</span><h4>El que baila</h4><p>Público de house y festivales boutique. Llega por el DJ set, se queda por las canciones.</p></div>
+    <div class="card"><span class="tag">Persona 3</span><h4>Quien decide</h4><p>Bookers, curadores de festival, sellos, marcas y venues. Necesitan claridad, material pro y una respuesta rápida.</p></div>
+  </div>
+  <h3 style="margin-top:56px">Tono</h3>
+  <p style="margin-bottom:18px">Cercano, honesto, poético sin ser cursi. Habla en primera persona, con frases cortas. Como tu manifiesto.</p>
+  <div class="do-dont">
+    <div class="card"><h4>Sí</h4><ul>
+      <li>"Esta canción nació en una semana en la que no estaba bien."</li>
+      <li>Contar el proceso: el estudio, el error, el ensayo.</li>
+      <li>Agradecer con nombre propio a quien te invita.</li>
+      <li>Hablar de capítulos, caminos, amaneceres: el universo de El Andar.</li>
+    </ul></div>
+    <div class="card"><h4>No</h4><ul>
+      <li>Hype vacío: "🔥🔥 EL MEJOR SET DEL AÑO 🔥🔥".</li>
+      <li>Mezclar en el mismo feed salsa, rock, hip hop y techno.</li>
+      <li>Quejas, polémicas o contenido que confunda la propuesta.</li>
+      <li>Banderas, símbolos o referencias que puedan malinterpretarse (aprendizaje de @dagetup.90).</li>
+    </ul></div>
+  </div>
+</div></section>
+
+<!-- IDENTIDAD VISUAL -->
+<section id="visual"><div class="wrap">
+  <div class="kicker"><b>06</b> Identidad visual</div>
+  <h2>De la noche al amanecer</h2>
+  <p class="lead" style="margin-bottom:40px">El sistema crece sin perder lo que ya funciona. La base oscura y el ácido de Medellín son la parte <b>electrónica</b>. Los tonos cálidos salen de El Andar —amanecer, girasoles, tierra, río— y son la parte <b>humana</b>.</p>
+
+  <div class="split">
+    <div style="background:var(--carbon);border:1px solid var(--linea);padding:60px;display:flex;align-items:center;justify-content:center">
+      <img src="assets/logo-blanco.png" alt="Logo Da Get Up" style="width:240px">
+    </div>
+    <div>
+      <h3>El logo se queda</h3>
+      <p>El búho funciona: ve en la oscuridad, escucha, observa. Encaja perfecto con un álbum sobre mirarse hacia adentro. Las espirales de los ojos ya parecen discos y ondas.</p>
+      <ul style="margin:16px 0 0 18px;color:#cfc8bc">
+        <li><b>Logo oficial:</b> búho + "DA GET UP" en letra condensada (la versión v2).</li>
+        <li><b>Retirar</b> el wordmark de puntos del EPK; queda solo como recurso de visuales en vivo.</li>
+        <li>Versiones: hueso sobre noche (principal), noche sobre hueso, solo búho (avatar, sticker).</li>
+        <li>Pendiente: vectorizar y limpiar desde <code>Manual de marca.ai</code> y entregarlo como kit.</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3 style="margin-top:70px">Paleta</h3>
+  <div class="swatches" style="margin-top:18px">
+    <div class="sw"><div class="c" style="background:#0b0b0c;border-bottom:1px solid var(--linea)"></div><div class="t"><b>Noche</b>#0B0B0C · fondo</div></div>
+    <div class="sw"><div class="c" style="background:#ede6da"></div><div class="t"><b>Hueso</b>#EDE6DA · texto, logo</div></div>
+    <div class="sw"><div class="c" style="background:#8a857d"></div><div class="t"><b>Ceniza</b>#8A857D · secundario</div></div>
+    <div class="sw"><div class="c" style="background:#d4ff00"></div><div class="t"><b>Ácido</b>#D4FF00 · electrónico, DJ set</div></div>
+    <div class="sw"><div class="c" style="background:#f28c38"></div><div class="t"><b>Amanecer</b>#F28C38 · El Andar</div></div>
+    <div class="sw"><div class="c" style="background:#e9b949"></div><div class="t"><b>Girasol</b>#E9B949 · luz, singles</div></div>
+    <div class="sw"><div class="c" style="background:#8a4a32"></div><div class="t"><b>Tierra</b>#8A4A32 · raíz</div></div>
+    <div class="sw"><div class="c" style="background:#2e6e73"></div><div class="t"><b>Río</b>#2E6E73 · viaje, distancia</div></div>
+  </div>
+  <div class="ratio">
+    <div style="flex:60;background:#0b0b0c;color:var(--muted);border:1px solid var(--linea)">60% noche</div>
+    <div style="flex:25;background:#ede6da">25% hueso</div>
+    <div style="flex:10;background:#f28c38">10% cálido</div>
+    <div style="flex:5;background:#d4ff00"></div>
+  </div>
+  <p class="muted" style="font-size:14px">Proporción de uso. El acento cálido manda en todo lo de El Andar; el ácido se reserva para el DJ set y detalles electrónicos. Nunca los dos acentos compitiendo en la misma pieza.</p>
+
+  <h3 style="margin-top:70px">Tipografía</h3>
+  <div class="grid g2" style="margin-top:18px">
+    <div class="type-sample"><div class="a">El Andar</div><div class="b">Archivo Condensed para títulos: fuerte, cercana al logo.</div><div class="c">ARCHIVO · WDTH 62 · 700–800</div></div>
+    <div class="type-sample"><div class="a" style="font-family:Inter;font-stretch:100%;font-weight:600;font-size:40px;text-transform:none;line-height:1.1">Canciones que se bailan y se sienten.</div><div class="b">Inter para textos largos, bios y captions.</div><div class="c">INTER · 400–600 · JETBRAINS MONO PARA DATOS Y CRÉDITOS</div></div>
+  </div>
+
+  <h3 style="margin-top:70px">Fotografía: en vivo, siempre</h3>
+  <p style="margin-top:10px">La imagen oficial de Da Get Up es <b>el artista tocando</b>: voz en el micrófono, manos en los equipos, público y visuales alrededor. Nada de retratos posados con gafas. Eso es lo que te diferencia de un DJ y lo que un booker quiere ver.</p>
+  <div class="gallery">
+    <img class="tall" src="assets/fest-carpa.jpg" alt="Show en carpa con público y proyecciones DA GET UP">
+    <img src="assets/live-teclado-2.jpg" alt="Tocando teclado con el búho en el equipo" style="object-position:50% 45%">
+    <img src="assets/fest-verde.jpg" alt="En vivo con luz verde">
+  </div>
+  <div class="grid g3" style="margin-top:18px">
+    <div class="card"><h4>Escenario</h4><p>Plano abierto con público y visuales: muestra la escala del show. Para EPK, flyers y prensa.</p></div>
+    <div class="card"><h4>Interpretación</h4><p>Plano medio cantando o tocando: la voz y las manos. Para portadas, perfil y avatar.</p></div>
+    <div class="card"><h4>Luz de escenario</h4><p>Fondos oscuros con la luz real del show (azul, verde, ámbar). Se respeta el color, sin filtros saturados.</p></div>
+  </div>
+  <div class="card" style="margin-top:18px"><h4>Dejar atrás</h4><p>Los retratos viejos con gafas, los fondos psicodélicos de ojo morado/neón y los filtros saturados del EPK actual. Pertenecen a otra etapa. En vivo los visuales pueden ser libres, pero el material oficial sigue esta guía.</p></div>
+</div></section>
+
+<figure class="band"><img src="assets/fest-rojo.jpg" alt="Da Get Up en vivo en festival, carpa con luz roja y público"><figcaption>Da Get Up · Live act en festival</figcaption></figure>
+
+<!-- EL ANDAR -->
+<section id="andar"><div class="wrap">
+  <div class="kicker"><b>07</b> El proyecto</div>
+  <h2>El Andar</h2>
+  <p class="big-quote" style="font-size:clamp(32px,5vw,60px);max-width:22ch">Un viaje hacia uno mismo. <em>El camino es la transformación.</em></p>
+  <p style="margin-top:24px">Caer · Buscar · Soltar · Recordar · Caminar · Amar · Servir · Encontrarse. Cada canción es una etapa. Visualmente, el álbum va de la noche al amanecer: arranca oscuro y termina en luz.</p>
+  <div class="journey">
+    <i style="background:#0b0b0c;border:1px solid var(--linea)"></i><i style="background:#1d1f22"></i><i style="background:#2e6e73"></i><i style="background:#3f5a55"></i><i style="background:#8a4a32"></i><i style="background:#b8633a"></i><i style="background:#d9772f"></i><i style="background:#f28c38"></i><i style="background:#e9b949"></i><i style="background:#f1d58b"></i><i style="background:#ede6da"></i>
+  </div>
+  <p class="muted" style="font-size:13px;font-family:'JetBrains Mono'">Rampa de color del álbum: cada capítulo toma un tono de esta franja para portada, visual y Canvas.</p>
+
+  <div style="margin-top:40px">
+    <div class="track"><span class="n">01</span><div><h4>El Andar</h4><p>Prólogo · 100 BPM · empieza el viaje</p></div><span class="st"><i class="dot" style="background:#555"></i>Por escribir</span></div>
+    <div class="track"><span class="n">02</span><div><h4>Si ver ni creer</h4><p>Cap. I · La búsqueda · 126 BPM</p></div><span class="st" style="color:var(--acido)"><i class="dot" style="background:var(--acido)"></i>Muy avanzado</span></div>
+    <div class="track"><span class="n">03</span><div><h4>Semillas</h4><p>Cap. IV · Silencio · 124 BPM</p></div><span class="st"><i class="dot" style="background:#777"></i>30%</span></div>
+    <div class="track"><span class="n">04</span><div><h4>Camino</h4><p>Cap. II · El espejo · 95 BPM</p></div><span class="st" style="color:var(--girasol)"><i class="dot" style="background:var(--girasol)"></i>Avanzado</span></div>
+    <div class="track"><span class="n">05</span><div><h4>Amanecer</h4><p>Cap. III · Elegirse · 95 BPM</p></div><span class="st" style="color:var(--girasol)"><i class="dot" style="background:var(--girasol)"></i>Avanzado</span></div>
+    <div class="track"><span class="n">06</span><div><h4>Algún día</h4><p>Cap. V · La dignidad · "Yo también merezco paz"</p></div><span class="st"><i class="dot" style="background:#777"></i>En desarrollo</span></div>
+    <div class="track"><span class="n">07</span><div><h4>Girasoles</h4><p>Cap. VI · Girar hacia la luz · 122 BPM</p></div><span class="st"><i class="dot" style="background:#777"></i>Ideas fuertes</span></div>
+    <div class="track"><span class="n">08</span><div><h4>Cruzando Mares y Ríos</h4><p>Cap. VII · El viaje</p></div><span class="st"><i class="dot" style="background:#777"></i>En desarrollo</span></div>
+    <div class="track"><span class="n">09</span><div><h4>Animal</h4><p>Cap. VIII · La sombra · 128 BPM · A#m</p></div><span class="st"><i class="dot" style="background:#777"></i>En desarrollo</span></div>
+    <div class="track"><span class="n">10</span><div><h4>Volver al Centro</h4><p>Instrumental · respirar, caminar, aceptar</p></div><span class="st"><i class="dot" style="background:#777"></i>En desarrollo</span></div>
+    <div class="track"><span class="n">11</span><div><h4>Bien</h4><p>Final · "aprendí a caminar siendo fiel a mí"</p></div><span class="st"><i class="dot" style="background:#777"></i>En desarrollo</span></div>
+    <div class="track"><span class="n">12</span><div><h4>La Paz</h4><p>Epílogo</p></div><span class="st"><i class="dot" style="background:#555"></i>Por definir</span></div>
+  </div>
+  <p class="muted" style="font-size:14px;margin-top:14px">Orden y estados tomados de Asana (sección "EL ANDAR"). Ojo: hay dos tracklists distintos (Sinopsis vs. tareas) y dos temas con el número 04. Hay que fijar uno.</p>
+
+  <h3 style="margin-top:56px">Estrategia de lanzamiento</h3>
+  <div class="grid g3" style="margin-top:16px">
+    <div class="card"><span class="tag on">Single 1</span><h4>Si ver ni creer</h4><p>El más avanzado y el que abre la gran pregunta del álbum. Presenta el nuevo sonido con voz.</p></div>
+    <div class="card"><span class="tag warm">Single 2</span><h4>Amanecer</h4><p>Nombre e imagen que resumen el universo visual. Ideal para el video de sesión en vivo.</p></div>
+    <div class="card"><span class="tag warm">Single 3</span><h4>Girasoles</h4><p>El gancho emocional ("solo somos girasoles"). Antesala del álbum.</p></div>
+  </div>
+  <p style="margin-top:18px">Después, el álbum completo con un <b>show de lanzamiento</b> de El Andar en vivo. Un single cada 6–8 semanas mantiene el algoritmo y la prensa activos sin quemarte.</p>
+</div></section>
+
+<!-- PLAN -->
+<section id="plan"><div class="wrap">
+  <div class="kicker"><b>08</b> Plan de carrera</div>
+  <h2>Los próximos 12 meses</h2>
+  <div class="tl">
+    <div><div class="when">Nov – Dic<small>2026 · Base</small></div><ul>
+      <li>Aprobar este documento: descriptor, bio, paleta, logo oficial.</li>
+      <li>Seleccionar las mejores fotos en vivo (festival + shows recientes) y pedir fotógrafo en cada fecha. Meta: 20 fotos oficiales.</li>
+      <li>EPK nuevo (web + PDF liviano &lt; 10 MB) y página de enlaces propia.</li>
+      <li>@dagetup90 armada antes de publicar: bio, destacadas, 9 piezas de arranque.</li>
+      <li>Canal de WhatsApp "Da Get Up" + correo propio de booking.</li>
+      <li>Cerrar letra, mezcla y máster de <i>Si ver ni creer</i>. Registrar obras (SAYCO) e ISRC.</li>
+    </ul></div>
+    <div><div class="when">Ene – Mar<small>2027 · Primer single</small></div><ul>
+      <li>Lanzar <b>Single 1</b> con pitch a playlists editoriales (Spotify for Artists, 4 semanas antes).</li>
+      <li>Video de sesión en vivo de El Andar (1 tema completo, cámara fija, sonido real).</li>
+      <li>Enviar demos a la primera ronda de sellos (ver sección siguiente).</li>
+      <li>4 fechas de live act, aunque sean pequeñas: el show se pule tocando.</li>
+    </ul></div>
+    <div><div class="when">Abr – Jun<small>2027 · Tracción</small></div><ul>
+      <li>Singles 2 y 3. Colaboración con un artista o vocalista afín.</li>
+      <li>Convocatorias de festivales y showcases (aplicar con meses de anticipación).</li>
+      <li>Becas y estímulos culturales públicos para financiar video o gira.</li>
+    </ul></div>
+    <div><div class="when">Jul – Oct<small>2027 · El Andar</small></div><ul>
+      <li>Lanzamiento del álbum (con sello o independiente vía distribuidora).</li>
+      <li>Show de lanzamiento en Bogotá + mini gira Medellín / Cali / Sabana.</li>
+      <li>Pitch a fechas en Europa usando la red de 2022.</li>
+    </ul></div>
+  </div>
+
+  <h3 style="margin-top:56px">Objetivos medibles (propuesta)</h3>
+  <div class="tbl"><table>
+    <tr><th>Área</th><th>Meta a 6 meses</th><th>Meta a 12 meses</th></tr>
+    <tr><td><b>Música</b></td><td>3 singles publicados</td><td>Álbum El Andar lanzado</td></tr>
+    <tr><td><b>Shows</b></td><td>6 fechas de live act</td><td>15 fechas · 1 festival · 1 fuera de Colombia</td></tr>
+    <tr><td><b>Industria</b></td><td>20 sellos contactados · 3 conversaciones</td><td>Álbum firmado o distribución con apoyo de marketing</td></tr>
+    <tr><td><b>Audiencia propia</b></td><td>300 personas en WhatsApp · 1.000 en IG</td><td>1.000 en WhatsApp · 5.000 en IG</td></tr>
+    <tr><td><b>Streaming</b></td><td>1 playlist editorial</td><td>5.000 oyentes mensuales</td></tr>
+  </table></div>
+  <p class="muted" style="font-size:14px;margin-top:12px">Son metas de arranque para ajustar con datos reales del primer trimestre. Lo importante es medirlas cada mes.</p>
+</div></section>
+
+<!-- SELLOS -->
+<section id="sellos"><div class="wrap">
+  <div class="kicker"><b>09</b> Industria</div>
+  <h2>Sellos y aliados</h2>
+  <p class="lead" style="margin-bottom:30px">Primero se construye la música y el relato; después se toca la puerta. Un sello firma lo que ya tiene movimiento. Por eso el orden es: single propio → tracción → pitch.</p>
+  <div class="tbl"><table>
+    <tr><th>Nivel</th><th>Sello</th><th>Por qué</th><th>Cómo</th></tr>
+    <tr><td>0 · Ya</td><td><b>Mikro Teck Records</b><br><span class="muted">Hollywood, FL</span></td><td>Ya publicaste <i>Skyfall</i> con ellos. Relación abierta.</td><td>Enviar el nuevo sonido con voz y preguntar por un EP.</td></tr>
+    <tr><td>1 · Colombia</td><td><b>Polen Records</b></td><td>Sello independiente colombiano de electrónica latina.</td><td>Contacto en su Bandcamp.</td></tr>
+    <tr><td>1 · Colombia</td><td><b>Discos Nutabe</b><br><span class="muted">Medellín</span></td><td>Referente del house colombiano desde 2013.</td><td>Contacto en su Bandcamp.</td></tr>
+    <tr><td>1 · Colombia</td><td><b>Plasmodia</b><br><span class="muted">Bogotá</span></td><td>Compilaciones de la escena electrónica latinoamericana.</td><td>Bandcamp.</td></tr>
+    <tr><td>1 · Colombia</td><td><b>Psicotropic Records</b></td><td>House y deep tech. Más para el DJ set que para El Andar.</td><td>Portal de demos: WAV 44.1 kHz / 16 bits, solo originales.</td></tr>
+    <tr><td>2 · Latam</td><td><b>ZZK Records</b><br><span class="muted">Buenos Aires</span></td><td>Electrónica latinoamericana con mirada futurista desde 2008.</td><td>Revisar web y Bandcamp.</td></tr>
+    <tr><td>2 · Latam</td><td><b>New Latam Beats</b><br><span class="muted">Chile</span></td><td>Compila electrónica orgánica del continente. Buena vitrina.</td><td>Buscar convocatoria de compilado.</td></tr>
+    <tr><td>3 · Global</td><td><b>Multi Culti</b></td><td>House con influencias del mundo; curaduría muy respetada.</td><td>Cuando haya 2–3 singles con tracción.</td></tr>
+  </table></div>
+  <p class="muted" style="font-size:14px;margin-top:12px">Antes de enviar: confirmar en la web, Bandcamp o SoundCloud de cada sello si reciben demos y en qué formato. Las políticas cambian. Ampliar la lista a 20 con sellos de indie dance y melodic house que publiquen artistas parecidos a tus referentes.</p>
+
+  <h3 style="margin-top:56px">Cómo escribirle a un sello</h3>
+  <div class="mail">Asunto: Da Get Up – "Si ver ni creer" (house / indie electrónico con voz en español)
+
+Hola [nombre],
+
+Soy Da Get Up, live act colombiano. Sigo [sello] por [lanzamiento concreto que te gustó] y creo que mi nuevo single encaja con su catálogo.
+
+Escucha privada: [link SoundCloud privado]
+126 BPM · voz y letra propia · parte de El Andar, un álbum de 12 capítulos.
+
+Antes: gira Europa 2022, "Skyfall" con Mikro Teck Records.
+EPK: [link]
+
+Gracias por escuchar,
+David Higuera – Da Get Up</div>
+  <p class="muted" style="font-size:14px;margin-top:12px">Un correo por sello, con nombre de la persona. Máximo 3 temas. Link privado, nunca archivos adjuntos. Si no responden, un solo seguimiento a las 2 semanas.</p>
+</div></section>
+
+<!-- PRACTICAS -->
+<section id="practicas"><div class="wrap">
+  <div class="kicker"><b>10</b> Prácticas</div>
+  <h2>Cómo se trabaja</h2>
+  <div class="grid g3">
+    <div class="card"><h4>Semana tipo</h4><ul>
+      <li>3 bloques de música (producción o letra)</li>
+      <li>1 ensayo de live act</li>
+      <li>1 bloque de negocio: correos, sellos, booking</li>
+      <li>1 bloque de contenido: grabar y entregar</li>
+    </ul></div>
+    <div class="card"><h4>Terminar &gt; perfeccionar</h4><p>Un tema terminado y publicado vale más que diez al 90%. Cada canción tiene fecha límite de mezcla.</p></div>
+    <div class="card"><h4>Un solo foco</h4><p>El Andar es la prioridad A. Dos Doses, covers y remixes esperan o salen bajo otro nombre.</p></div>
+    <div class="card"><h4>Proteger la obra</h4><p>Registrar canciones (SAYCO / ACINPRO), códigos ISRC, contratos firmados aunque sea con amigos, copias de seguridad de los proyectos.</p></div>
+    <div class="card"><h4>Audiencia propia</h4><p>WhatsApp y correo son tuyos; Instagram es prestado. Cada show termina con un QR para unirse.</p></div>
+    <div class="card"><h4>Humildad activa</h4><p>Mostrar demos a 3 personas de confianza antes de lanzar. Agradecer públicamente a quien te abre puertas.</p></div>
+    <div class="card"><h4>Dinero</h4><p>Separar 10–20% de cada show para el proyecto: fotos, video, máster, pauta.</p></div>
+    <div class="card"><h4>Revisión mensual</h4><p>Primer lunes de cada mes: metas vs. resultados, 30 minutos, y ajustar el plan.</p></div>
+    <div class="card"><h4>Redes al final</h4><p>Instagram amplifica lo que ya existe. Primero la música, el EPK y el show; después el contenido.</p></div>
+  </div>
+
+  <h3 style="margin-top:56px">Ecosistema: qué hace cada canal</h3>
+  <div class="tbl"><table>
+    <tr><th>Canal</th><th>Función</th></tr>
+    <tr><td><b>Spotify / Apple / Deezer</b></td><td>Donde vive la música. Perfil de artista con foto, bio y Canvas al día.</td></tr>
+    <tr><td><b>YouTube</b></td><td>Sesiones en vivo y videos. La prueba de que el live act es real.</td></tr>
+    <tr><td><b>SoundCloud</b></td><td>DJ sets y links privados para sellos.</td></tr>
+    <tr><td><b>Instagram @dagetup90</b></td><td>Vitrina y comunidad. Proceso, shows, lanzamientos.</td></tr>
+    <tr><td><b>WhatsApp (canal)</b></td><td>Audiencia propia: fechas, preventas, lanzamientos.</td></tr>
+    <tr><td><b>Web / EPK</b></td><td>Para quien decide: bookers, sellos, prensa. Un solo link con todo.</td></tr>
+  </table></div>
+</div></section>
+
+<!-- AHORA -->
+<section id="ahora"><div class="wrap">
+  <div class="kicker"><b>11</b> Acción</div>
+  <h2>Esta semana</h2>
+  <p class="muted" style="margin-bottom:20px">Se marcan en este navegador para que veas el avance.</p>
+  <div class="check" id="checklist">
+    <label><input type="checkbox" data-k="c1"><span>Leer este documento completo y anotar lo que no te representa.</span></label>
+    <label><input type="checkbox" data-k="c2"><span>Elegir el descriptor (recomendado: "Electrónica con alma").</span></label>
+    <label><input type="checkbox" data-k="c3"><span>Fijar el tracklist definitivo de El Andar en Asana (resolver los dos "04").</span></label>
+    <label><input type="checkbox" data-k="c4"><span>Poner fecha de máster a "Si ver ni creer".</span></label>
+    <label><input type="checkbox" data-k="c5"><span>Decidir el correo de booking del artista (propio vs. We Rock).</span></label>
+    <label><input type="checkbox" data-k="c6"><span>Escoger 10 fotos en vivo que cumplan la guía visual (festival + shows recientes).</span></label>
+    <label><input type="checkbox" data-k="c7"><span>Crear el canal de WhatsApp "Da Get Up".</span></label>
+    <label><input type="checkbox" data-k="c8"><span>Escribirle a Mikro Teck contando el nuevo proyecto.</span></label>
+  </div>
+
+  <h3 style="margin-top:56px">Siguientes entregables</h3>
+  <div class="grid g3" style="margin-top:16px">
+    <div class="card"><span class="tag">1</span><h4>Manual de marca</h4><p>Logo vectorizado y sus usos, paleta y tipografías en archivos listos para diseñadores.</p></div>
+    <div class="card"><span class="tag">2</span><h4>EPK nuevo</h4><p>Web y PDF liviano con la nueva bio, fotos, El Andar y el rider.</p></div>
+    <div class="card"><span class="tag">3</span><h4>Kit @dagetup90</h4><p>Bio, destacadas, plantillas de portada y las 9 piezas de arranque.</p></div>
+  </div>
+</div></section>
+
+<footer>
+  <img src="assets/logo-blanco.png" alt="">
+  <p>Da Get Up · Plan Maestro v1 · Noviembre 2026</p>
+  <p style="margin-top:6px">Documento de trabajo interno.</p>
+</footer>
+
+<script>
+document.querySelectorAll('#checklist input').forEach(function(cb){
+  try{ cb.checked = localStorage.getItem('dgu-'+cb.dataset.k)==='1'; }catch(e){}
+  cb.addEventListener('change',function(){ try{ localStorage.setItem('dgu-'+cb.dataset.k, cb.checked?'1':'0'); }catch(e){} });
+});
+</script>
+</body>
+</html>
