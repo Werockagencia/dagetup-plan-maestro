@@ -146,6 +146,15 @@ td b{font-weight:600}
 .ig-grid .t i{font:normal 11px "JetBrains Mono",monospace;color:var(--muted)}
 .ig-grid .t.acid{background:var(--acido);border-color:var(--acido);color:#000}
 .ig-grid .t.acid span,.ig-grid .t.acid i{color:#2b3a00}
+.eco{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px}
+.eco-c{display:flex;flex-direction:column;gap:6px;padding:18px;background:var(--carbon);border:1px solid var(--linea);text-decoration:none;color:var(--fg);transition:border-color .25s,transform .25s}
+.eco-c:hover{border-color:var(--acido);transform:translateY(-3px)}
+.eco-c span{font:500 11px "JetBrains Mono",monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.eco-c b{font-family:Archivo,sans-serif;font-stretch:62%;font-weight:800;font-size:24px;text-transform:uppercase;line-height:1}
+.eco-c i{font-style:normal;font-size:13px;color:var(--acido)}
+.eco-c.acid{background:var(--acido);border-color:var(--acido);color:#000}
+.eco-c.acid span{color:#2b3a00}.eco-c.acid i{color:#000}
+section a{text-underline-offset:3px}
 footer{padding:80px 0;border-top:1px solid var(--linea);text-align:center;color:var(--muted);font-size:14px}
 footer img{width:160px;margin:0 auto 18px;opacity:.7}
 </style>
@@ -154,6 +163,7 @@ footer img{width:160px;margin:0 auto 18px;opacity:.7}
 
 <nav><div class="wrap">
   <img src="assets/buho.png" alt="Da Get Up">
+  <a href="#enlaces">Enlaces</a>
   <a href="#diagnostico">Diagnóstico</a>
   <a href="#esencia">Esencia</a>
   <a href="#posicion">Posicionamiento</a>
@@ -179,6 +189,20 @@ footer img{width:160px;margin:0 auto 18px;opacity:.7}
   </div></div>
 </header>
 
+<!-- ECOSISTEMA -->
+<section id="enlaces" style="padding:56px 0"><div class="wrap">
+  <div class="kicker"><b>Ecosistema</b> · todo Da Get Up en un clic</div>
+  <div class="eco">
+    <a class="eco-c" href="https://werock.space/dagetup/" target="_blank" rel="noopener"><span>EPK · Español</span><b>werock.space/dagetup</b><i>Bookers, sellos, prensa ↗</i></a>
+    <a class="eco-c" href="https://werock.space/dagetup/en.html" target="_blank" rel="noopener"><span>EPK · English</span><b>Electronic press kit</b><i>Internacional ↗</i></a>
+    <a class="eco-c" href="https://werock.space/dagetup/medellin/" target="_blank" rel="noopener"><span>Gira</span><b>Medellín Takeover</b><i>13–26 nov · booking ↗</i></a>
+    <a class="eco-c acid" href="https://werockagencia.github.io/dagetup-medellin/ig/" target="_blank" rel="noopener"><span>Instagram</span><b>Kit de piezas</b><i>Posts, reels y captions ↗</i></a>
+    <a class="eco-c" href="https://werockagencia.github.io/dagetup-manual-de-marca/" target="_blank" rel="noopener"><span>Marca</span><b>Manual de marca</b><i>Logos, color, descargas ↗</i></a>
+    <a class="eco-c" href="https://www.instagram.com/dagetup90/" target="_blank" rel="noopener"><span>Red</span><b>@dagetup90</b><i>Instagram ↗</i></a>
+    <a class="eco-c" href="https://open.spotify.com/artist/7gkUOkyEnO0pQkqCvGLhKq" target="_blank" rel="noopener"><span>Música</span><b>Spotify</b><i>Lanzamientos ↗</i></a>
+    <a class="eco-c" href="https://www.youtube.com/watch?v=KuznMMQGNZI" target="_blank" rel="noopener"><span>Video</span><b>YouTube</b><i>Owl Frequencies ↗</i></a>
+  </div>
+</div></section>
 <!-- DIAGNOSTICO -->
 <section id="diagnostico"><div class="wrap">
   <div class="kicker"><b>01</b> Diagnóstico de manager</div>
@@ -459,7 +483,7 @@ footer img{width:160px;margin:0 auto 18px;opacity:.7}
   <div class="split" style="align-items:start">
     <div>
       <p class="lead">Dos semanas en Medellín con live act, DJ set y showcases en clubes, bares, rooftops y espacios culturales. Es la primera salida de la marca nueva a la calle y la mejor fábrica de contenido del año: todo lo que pase allá alimenta el Instagram, el EPK y el pitch a sellos.</p>
-      <p style="margin-top:14px" class="muted">Landing de booking: <a href="https://werockagencia.github.io/dagetup-medellin/" target="_blank" rel="noopener">werockagencia.github.io/dagetup-medellin</a> · también en werock.space/dagetup/medellin</p>
+      <p style="margin-top:14px" class="muted">Landing de booking: <a href="https://werockagencia.github.io/dagetup-medellin/" target="_blank" rel="noopener">werockagencia.github.io/dagetup-medellin</a> · también en <a href="https://werock.space/dagetup/medellin/" target="_blank" rel="noopener">werock.space/dagetup/medellin</a></p>
     </div>
     <div class="card">
       <span class="tag on">Objetivos del Takeover</span>
@@ -509,7 +533,7 @@ footer img{width:160px;margin:0 auto 18px;opacity:.7}
       <ul>
         <li><b>Nombre:</b> Da Get Up · Live Act</li>
         <li><b>Bio:</b> Bajo la superficie ✦ Voz, sintes y Ableton en vivo ✦ El Andar · próximamente ✦ Booking ↓</li>
-        <li><b>Enlace:</b> werock.space/dagetup</li>
+        <li><b>Enlace:</b> <a href="https://werock.space/dagetup/" target="_blank" rel="noopener">werock.space/dagetup</a></li>
         <li><b>Foto:</b> solo el búho, hueso sobre negro.</li>
         <li><b>Destacadas:</b> Medellín · Live · El Andar · Booking, con portadas negras y un punto ácido.</li>
         <li><b>Cuenta profesional:</b> Artista / Músico, vinculada a la página de Facebook Da Get Up.</li>
@@ -520,14 +544,14 @@ footer img{width:160px;margin:0 auto 18px;opacity:.7}
   <div class="tbl" style="margin-top:40px"><table>
     <tr><th>#</th><th>Fecha</th><th>Pieza</th><th>Qué es</th><th>Material</th></tr>
     <tr><td><b>01</b></td><td>Mié 4 nov</td><td>Reel · En sesión</td><td>Gancho: "MEZCLO. TOCO. CANTO." al segundo 0. Pregunta: ¿DJ set o live act? En colaboración con JAVA Filmmaker.</td><td>Reels › sin-hayarlo-al-100.mp4</td></tr>
-    <tr><td><b>02</b></td><td>Mié 4 nov</td><td>Carrusel · Quién es</td><td>5 slides: portada, Mezclo/Toco/Canto, gira 2022, Skyfall, El Andar.</td><td>Listo en el kit</td></tr>
-    <tr><td><b>03</b></td><td>Mié 4 nov</td><td>Tipográfica</td><td>"Bajo la superficie" con el búho. Pregunta: ¿qué canción te llega más abajo de la piel?</td><td>Listo en el kit</td></tr>
-    <tr><td><b>04</b></td><td>Jue 5 nov</td><td>Reel · Skyfall</td><td>Festival + Mikro Teck, cierra en "SKYFALL · OUT NOW". Link a Spotify en historias.</td><td>Nuevo corte listo en el kit</td></tr>
-    <tr><td><b>05</b></td><td>Vie 6 nov</td><td>Reel · Owl Frequencies</td><td>28 s de Bogotá de noche en vertical. Video completo en YouTube.</td><td>Versión vertical lista en el kit</td></tr>
+    <tr><td><b>02</b></td><td>Mié 4 nov</td><td>Carrusel · Quién es</td><td>5 slides: portada, Mezclo/Toco/Canto, gira 2022, Skyfall, El Andar.</td><td><a href="https://werockagencia.github.io/dagetup-medellin/ig/" target="_blank" rel="noopener">Listo en el kit ↗</a></td></tr>
+    <tr><td><b>03</b></td><td>Mié 4 nov</td><td>Tipográfica</td><td>"Bajo la superficie" con el búho. Pregunta: ¿qué canción te llega más abajo de la piel?</td><td><a href="https://werockagencia.github.io/dagetup-medellin/ig/" target="_blank" rel="noopener">Listo en el kit ↗</a></td></tr>
+    <tr><td><b>04</b></td><td>Jue 5 nov</td><td>Reel · Skyfall</td><td>Festival + Mikro Teck, cierra en "SKYFALL · OUT NOW". Link a Spotify en historias.</td><td><a href="https://werockagencia.github.io/dagetup-medellin/ig/" target="_blank" rel="noopener">Nuevo corte listo en el kit ↗</a></td></tr>
+    <tr><td><b>05</b></td><td>Vie 6 nov</td><td>Reel · Owl Frequencies</td><td>28 s de Bogotá de noche en vertical. Video completo en YouTube.</td><td><a href="https://werockagencia.github.io/dagetup-medellin/ig/" target="_blank" rel="noopener">Versión vertical lista en el kit ↗</a></td></tr>
     <tr><td><b>06</b></td><td>Sáb 7 nov</td><td>Reel · Back To</td><td>Tu track en la pista. Pregunta: ¿con qué track cierras la noche?</td><td>Reels › Back-to.mp4</td></tr>
     <tr><td><b>07</b></td><td>Dom 8 nov</td><td>Reel · Manos en vivo</td><td>POV armando una canción en vivo. Comenta "VIVO" para ver el tema completo.</td><td>Reels › tu hijo mio.mp4 (recortar 20–30 s)</td></tr>
     <tr><td><b>08</b></td><td>Lun 9 nov</td><td>Reel · ¿Dónde tocamos?</td><td>Pregunta directa a Medellín: venues, colectivos y público.</td><td>Clip del festival + texto</td></tr>
-    <tr><td><b>09</b></td><td>Mié 11 nov</td><td>Carrusel · Takeover</td><td>Anuncio oficial con fechas y venues confirmados. En colaboración con cada venue.</td><td>Kit Takeover listo con 13–26 nov</td></tr>
+    <tr><td><b>09</b></td><td>Mié 11 nov</td><td>Carrusel · Takeover</td><td>Anuncio oficial con fechas y venues confirmados. En colaboración con cada venue.</td><td><a href="https://werockagencia.github.io/dagetup-medellin/ig/" target="_blank" rel="noopener">Kit Takeover listo con 13–26 nov ↗</a></td></tr>
   </table></div>
 
   <div class="grid g3" style="margin-top:24px">
@@ -543,7 +567,7 @@ footer img{width:160px;margin:0 auto 18px;opacity:.7}
   <div class="tl">
     <div><div class="when">Nov – Dic<small>2026 · Base</small></div><ul>
       <li>✓ Concepto "Bajo la superficie", paleta ácida y logo oficial definidos.</li>
-      <li>✓ EPK nuevo en línea: werock.space/dagetup. Falta la versión PDF liviana (&lt; 10 MB).</li>
+      <li>✓ EPK nuevo en línea: <a href="https://werock.space/dagetup/" target="_blank" rel="noopener">werock.space/dagetup</a>. Falta la versión PDF liviana (&lt; 10 MB).</li>
       <li>@dagetup90: perfil listo y las 9 primeras publicaciones entre el 4 y el 11 de nov.</li>
       <li><b>Medellín Takeover (13–26 nov)</b>: 4–6 noches, contenido de cada fecha y QR al canal de WhatsApp.</li>
       <li>Seleccionar las mejores fotos en vivo y pedir fotógrafo en cada fecha. Meta: 20 fotos oficiales.</li>
@@ -610,7 +634,7 @@ Escucha privada: [link SoundCloud privado]
 126 BPM · voz y letra propia · parte de El Andar, un álbum de 12 capítulos.
 
 Antes: gira Europa 2022, "Skyfall" con Mikro Teck Records.
-EPK: [link]
+EPK: https://werock.space/dagetup
 
 Gracias por escuchar,
 David Higuera – Da Get Up</div>
@@ -646,7 +670,7 @@ David Higuera – Da Get Up</div>
     <tr><td><b>SoundCloud</b></td><td>DJ sets y links privados para sellos.</td></tr>
     <tr><td><b>Instagram @dagetup90</b></td><td>Vitrina y comunidad. Proceso, shows, lanzamientos.</td></tr>
     <tr><td><b>WhatsApp (canal)</b></td><td>Audiencia propia: fechas, preventas, lanzamientos.</td></tr>
-    <tr><td><b>Web / EPK</b></td><td>Para quien decide: bookers, sellos, prensa. Un solo link con todo.</td></tr>
+    <tr><td><b>Web / EPK</b></td><td>Para quien decide: bookers, sellos, prensa. Un solo link con todo: <a href="https://werock.space/dagetup/" target="_blank" rel="noopener">werock.space/dagetup</a>.</td></tr>
   </table></div>
 </div></section>
 
@@ -671,9 +695,9 @@ David Higuera – Da Get Up</div>
 
   <h3 style="margin-top:56px">Siguientes entregables</h3>
   <div class="grid g3" style="margin-top:16px">
-    <div class="card"><span class="tag">1</span><h4>Manual de marca</h4><p>Logo vectorizado y sus usos, paleta y tipografías en archivos listos para diseñadores.</p></div>
-    <div class="card"><span class="tag on">2 · Hecho</span><h4>EPK nuevo</h4><p>En línea en werock.space/dagetup con galería, zoom y la identidad nueva. Falta el PDF liviano.</p></div>
-    <div class="card"><span class="tag">3</span><h4>Kit @dagetup90</h4><p>Bio, destacadas, plantillas de portada y las 9 piezas de arranque.</p></div>
+    <div class="card"><span class="tag on">1 · Hecho</span><h4>Manual de marca</h4><p>Logo vectorizado y sus usos, paleta, tipografías y descargas. <a href="https://werockagencia.github.io/dagetup-manual-de-marca/" target="_blank" rel="noopener">Abrir manual ↗</a></p></div>
+    <div class="card"><span class="tag on">2 · Hecho</span><h4>EPK nuevo</h4><p>En línea con galería, zoom y la identidad nueva. Falta el PDF liviano. <a href="https://werock.space/dagetup/" target="_blank" rel="noopener">Abrir EPK ↗</a></p></div>
+    <div class="card"><span class="tag on">3 · Hecho</span><h4>Kit @dagetup90</h4><p>Las 9 piezas de arranque, reels y captions listos para copiar. <a href="https://werockagencia.github.io/dagetup-medellin/ig/" target="_blank" rel="noopener">Abrir kit ↗</a></p></div>
   </div>
 </div></section>
 
